@@ -35,7 +35,7 @@ export const putItemHandler = async (event) => {
         Item: { id : id, disponible : disponible, anoPublicacion : anoPublicacion, autor : autor 
         , editorial : editorial, nombreLibro : nombreLibro}
     };
-    console.log(disponible);
+    
 
     try {
         const data = await ddbDocClient.send(new PutCommand(params));
